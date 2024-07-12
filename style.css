@@ -6,7 +6,7 @@
 }
 
 :root {
-  --themeColor: 29, 161, 242;
+  --themeColor: 99, 242, 253;
   /* Theme Color in (R,G,B) format */
 }
 
@@ -79,7 +79,7 @@ a {
 
 .btn-theme {
   background: rgba(var(--themeColor), 1);
-  color: #fff;
+  color: #000000;
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
 }
 
@@ -220,7 +220,7 @@ a {
   width: 100%;
   box-shadow: 0 10px 100px -5px #eee;
   z-index: 1000;
-  background: #fff;
+  background: #000000bd;
 }
 
 .main-header__logo-container {
@@ -288,7 +288,7 @@ a {
   width: 1px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #000;
+  background-color: #000000;
 }
 
 .main-header__sm-menu-close:before {
@@ -363,7 +363,7 @@ a {
 .main-header__logo-text {
   font-size: 2.2rem;
   letter-spacing: 1px;
-  color: #000;
+  color: #ffffff;
   font-weight: 400;
 }
 
@@ -376,7 +376,7 @@ a {
   padding: 1.3rem 2rem;
   font-size: 1.6rem;
   letter-spacing: 1px;
-  color: #000;
+  color: #ffffff;
   font-weight: 400;
 }
 
