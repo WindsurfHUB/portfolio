@@ -77,6 +77,48 @@ smMenuCloseBtn.addEventListener('click', () => {
   smMenu.classList.remove('main-header__sm-menu--active')
 })
 
+// Text changing functionality
+const greetings = [
+  'Hello 👋',       // English
+  'Hola 👋',        // Spanish
+  '你好 👋',         // Mandarin
+  'Bonjour 👋',     // French
+  'Olá 👋',         // Portuguese
+  'こんにちは 👋',    // Japanese
+  '안녕하세요 👋',    // Korean
+  'Guten Tag 👋',    // German
+  'Ciao 👋',        // Italian
+  'สวัสดี 👋'       // Thai
+];
 
+const texts = [
+  'MERN-stack Full-stack Developer',          // English
+  'Desarrollador Full-stack MERN',            // Spanish
+  'MERN 全栈开发者',                            // Mandarin
+  'Développeur Full-stack MERN',              // French
+  'Desenvolvedor Full-stack MERN',            // Portuguese
+  'MERNフルスタック開発者',                      // Japanese
+  'MERN 풀스택 개발자',                         // Korean
+  'MERN-Stack Full-Stack-Entwickler',         // German
+  'Sviluppatore Full-stack MERN',             // Italian
+  'นักพัฒนา Full-stack MERN'                    // Thai
+];
 
+const changingGreeting = document.getElementById('changing-greeting');
+const changingText = document.getElementById('changing-text');
 
+let currentGreetingIndex = 0;
+let currentTextIndex = 0;
+
+const changeGreeting = () => {
+  currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
+  changingGreeting.textContent = greetings[currentGreetingIndex];
+};
+
+const changeText = () => {
+  currentTextIndex = (currentTextIndex + 1) % texts.length;
+  changingText.textContent = texts[currentTextIndex];
+};
+
+setInterval(changeGreeting, 1500);
+setInterval(changeText, 1500);
