@@ -85,7 +85,7 @@ function Main() {
             />
           </div>
           <h4 className="main-header__logo-text">
-            Thananarin Saisornthananant
+            Thananarin S.
           </h4>
         </div>
 
