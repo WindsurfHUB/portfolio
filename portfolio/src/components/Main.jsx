@@ -79,7 +79,7 @@ function Main() {
           <div className="main-header__logo-img-cont">
             {/* If using import, replace src with {profileImg} */}
             <img
-              src="/assets/profile.jpg" // Ensure the image is placed in public/assets/
+              src="/profile.jpg" 
               alt="Logo"
               className="main-header__logo-img"
             />
@@ -313,7 +313,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="/assets/task-manager.png" // Ensure the image is in public/assets/
+                      src="/task-manager.png" 
                       alt="Task Manager Project"
                       className="projects__list-item-img"
                     />
@@ -352,7 +352,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="/assets/potion-cafe.png" // Ensure the image is in public/assets/
+                      src="/potion-cafe.png" 
                       alt="Potion Cafe Project"
                       className="projects__list-item-img"
                     />
@@ -411,7 +411,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="./assets/GED_certificate.jpg"
+                      src="/GED_certificate.jpg"
                       alt="Project Image"
                       className="projects__list-item-img"
                     />
@@ -430,7 +430,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="./assets/Thananarin-Saisornthananant.png"
+                      src="/Thananarin-Saisornthananant.png"
                       alt="Project Image"
                       className="projects__list-item-img"
                     />
@@ -449,7 +449,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="./assets/windsurf2024_s-profile-_-Codecademy_JS.png"
+                      src="/windsurf2024_s-profile-_-Codecademy_JS.png"
                       alt="Project Image"
                       className="projects__list-item-img"
                     />
@@ -467,7 +467,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="./assets/windsurf2024_s-profile-_-Codecademy_SQL.png"
+                      src="/windsurf2024_s-profile-_-Codecademy_SQL.png"
                       alt="Project Image"
                       className="projects__list-item-img"
                     />
@@ -485,7 +485,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="./assets/windsurf2024_s-profile-_-Codecademy_CSs.png"
+                      src="/windsurf2024_s-profile-_-Codecademy_CSs.png"
                       alt="Project Image"
                       className="projects__list-item-img"
                     />
@@ -503,7 +503,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="./assets/certificate_51610_1260087-1260087-17234003144403.jpg"
+                      src="/certificate_51610_1260087-1260087-17234003144403.jpg"
                       alt="Project Image"
                       className="projects__list-item-img"
                     />
@@ -522,7 +522,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="./assets//certificate_56361_1260087-1260087-17233055177081.jpg"
+                      src="/certificate_56361_1260087-1260087-17233055177081.jpg"
                       alt="Project Image"
                       className="projects__list-item-img"
                     />
@@ -541,7 +541,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="../assets/windsurf2024_s-profile-_-Codecademy_HTML.png"
+                      src="./windsurf2024_s-profile-_-Codecademy_HTML.png"
                       alt="Project Image"
                       className="projects__list-item-img"
                     />
