@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Chronicles from "./Chronicles.jsx";
 
 function Main() {
   // State for Small Screen Menu
@@ -285,12 +284,24 @@ function Main() {
                   <li className="about__skill">Express.js</li>
                   <li className="about__skill">GitHub</li>
                 </ul>
-                <button className="btn btn-theme projects__btn-theme">
-                  <Link to ="Chronicles.jsx">Chronicles</Link>
-                </button>
-                <p className="text-primary about__text-primary">
-                  It's just my life highlight of event that happen in my life.
-                </p>
+                <h3 className="heading-quaternary py-6">
+                  More About Me
+                </h3>
+                <div className="center">
+                  <p className="text-primary about__text-primary">
+                    Click in to "My Chronicles" to know more about me and what my life is like. (It's just my life highlight of event that happen in my life.)(WIP)
+                  </p>
+                </div>
+                <div className="center flex justify-center pr-36">
+                  <Link to="/Chronicles">
+                    <button className="learn-more">
+                      <span className="circle" aria-hidden="true">
+                        <span className="icon arrow"></span>
+                      </span>
+                      <span className="button-text">My Chronicles</span>
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

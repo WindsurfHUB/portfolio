@@ -44,7 +44,7 @@ html {
 } */
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 ul {
@@ -283,7 +283,7 @@ a {
 .main-header__sm-menu-close:before,
 .main-header__sm-menu-close:after {
   position: absolute;
-  content: ' ';
+  content: " ";
   height: 3rem;
   width: 1px;
   left: 50%;
@@ -772,7 +772,6 @@ a {
 /* Code for Mozilla Firefox 4 to 18 */
 /* Code for Mozilla Firefox 19+ */
 
-
 .contact__form-field-input::placeholder {
   color: rgb(175, 175, 175);
   font-weight: 400;
@@ -832,7 +831,7 @@ a {
 }
 
 .contact__form-visual {
-  background-image: url('https://i.postimg.cc/mrHQw69n/contact-form-bg.jpg');
+  background-image: url("https://i.postimg.cc/mrHQw69n/contact-form-bg.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -847,7 +846,7 @@ a {
 }
 
 .contact__form-visual::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 20;
   background: rgba(var(--themeColor), 0.5);
@@ -933,7 +932,6 @@ a {
   font-weight: 700;
 }
 
-
 .themeClrSelector {
   position: fixed;
   top: 50%;
@@ -975,4 +973,101 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.center {
+  display: flex;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 18rem; /* Increase width */
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 4rem; /* Increase circle size */
+  height: 4rem;
+  background: #282936;
+  border-radius: 2.5rem; /* Adjust border-radius for bigger circle */
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.75rem; /* Slightly adjust positioning */
+  width: 1.75rem; /* Increase arrow size */
+  height: 0.15rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.35rem; /* Adjust arrow placement */
+  right: 0.125rem; /* Slightly more space */
+  width: 1rem; /* Increase arrowhead size */
+  height: 1rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 0 0 2.25rem; /* Adjust text margin to match larger circle */
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem; /* Increase text size */
+  padding: 1rem 0; /* Slightly increase padding */
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1.25rem, 0); /* Adjust transform for bigger circle */
+}
+
+button:hover .button-text {
+  color: #fff;
 }
