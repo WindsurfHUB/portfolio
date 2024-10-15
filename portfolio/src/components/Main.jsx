@@ -106,7 +106,7 @@ function Main() {
             </li>
             <li className="main-header__navigation-link">
               <a
-                href="https://drive.google.com/file/d/1nlJJ8Yaj-Vn1da7dwJVgnwn0g4WI3Vvt/view?usp=sharing"
+                href="https://docs.google.com/document/d/110vZAgUJs1gymCWz0p-mfdE-QREU-pjBAD1ajRgWEps/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
