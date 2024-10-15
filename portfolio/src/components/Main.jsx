@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Chronicles from "./Chronicles.jsx";
 
 function Main() {
   // State for Small Screen Menu
@@ -79,14 +81,12 @@ function Main() {
           <div className="main-header__logo-img-cont">
             {/* If using import, replace src with {profileImg} */}
             <img
-              src="/profile.jpg" 
+              src="/profile.jpg"
               alt="Logo"
               className="main-header__logo-img"
             />
           </div>
-          <h4 className="main-header__logo-text">
-            Thananarin S.
-          </h4>
+          <h4 className="main-header__logo-text">Thananarin S.</h4>
         </div>
 
         {/* Navigation Links */}
@@ -106,7 +106,7 @@ function Main() {
             </li>
             <li className="main-header__navigation-link">
               <a
-                href="https://docs.google.com/document/d/110vZAgUJs1gymCWz0p-mfdE-QREU-pjBAD1ajRgWEps/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1UlrnNcTbKCeXGnqxMgHYx_5bUaTBSyzY/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -285,6 +285,12 @@ function Main() {
                   <li className="about__skill">Express.js</li>
                   <li className="about__skill">GitHub</li>
                 </ul>
+                <button className="btn btn-theme projects__btn-theme">
+                  <Link to ="Chronicles.jsx">Chronicles</Link>
+                </button>
+                <p className="text-primary about__text-primary">
+                  It's just my life highlight of event that happen in my life.
+                </p>
               </div>
             </div>
           </div>
@@ -313,7 +319,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="/task-manager.png" 
+                      src="/task-manager.png"
                       alt="Task Manager Project"
                       className="projects__list-item-img"
                     />
@@ -352,7 +358,7 @@ function Main() {
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
-                      src="/potion-cafe.png" 
+                      src="/potion-cafe.png"
                       alt="Potion Cafe Project"
                       className="projects__list-item-img"
                     />
