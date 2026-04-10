@@ -76,9 +76,8 @@ function Main() {
       {/* Header Section */}
       <header className="main-header">
         {/* Logo Container */}
-        <div className="main-header__logo-container">
+        <Link to="/profile" className="main-header__logo-container">
           <div className="main-header__logo-img-cont">
-            {/* If using import, replace src with {profileImg} */}
             <img
               src="/profile.jpg"
               alt="Logo"
@@ -86,7 +85,7 @@ function Main() {
             />
           </div>
           <h4 className="main-header__logo-text">Thananarin S.</h4>
-        </div>
+        </Link>
 
         {/* Navigation Links */}
         <nav className="main-header__navigation">
@@ -95,13 +94,16 @@ function Main() {
               <a href="#home-hero">Home</a>
             </li>
             <li className="main-header__navigation-link">
-              <a href="#certificates">Certificate</a>
+              <a href="#experience">Experience</a>
             </li>
             <li className="main-header__navigation-link">
-              <a href="#about">About</a>
+              <a href="#self-development">Self-Development</a>
             </li>
             <li className="main-header__navigation-link">
-              <a href="#projects">Projects</a>
+              <a href="#awards">Awards</a>
+            </li>
+            <li className="main-header__navigation-link">
+              <a href="#leadership">Leadership</a>
             </li>
             <li className="main-header__navigation-link">
               <a
@@ -162,28 +164,37 @@ function Main() {
             <li>
               <a
                 className="main-header__sm-menu-link main-header__sm-menu-link--2"
-                href="#certificates"
-                onClick={(e) => handleMenuLinkClick(e, "certificates")}
+                href="#experience"
+                onClick={(e) => handleMenuLinkClick(e, "experience")}
               >
-                Certificate
+                Experience
               </a>
             </li>
             <li>
               <a
                 className="main-header__sm-menu-link main-header__sm-menu-link--3"
-                href="#about"
-                onClick={(e) => handleMenuLinkClick(e, "about")}
+                href="#self-development"
+                onClick={(e) => handleMenuLinkClick(e, "self-development")}
               >
-                About
+                Self-Development
               </a>
             </li>
             <li>
               <a
                 className="main-header__sm-menu-link main-header__sm-menu-link--4"
-                href="#projects"
-                onClick={(e) => handleMenuLinkClick(e, "projects")}
+                href="#awards"
+                onClick={(e) => handleMenuLinkClick(e, "awards")}
               >
-                Projects
+                Awards
+              </a>
+            </li>
+            <li>
+              <a
+                className="main-header__sm-menu-link main-header__sm-menu-link--4"
+                href="#leadership"
+                onClick={(e) => handleMenuLinkClick(e, "leadership")}
+              >
+                Leadership
               </a>
             </li>
           </ul>
@@ -206,93 +217,285 @@ function Main() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="about main-section">
+      {/* Professional Experience Section */}
+      <section id="experience" className="projects main-section">
         <div className="main-container">
           <h2 className="heading-secondary projects__heading-secondary">
-            <span className="heading-secondary__sm"> About 🏄‍♂️</span>
+            <span className="heading-secondary__sm"> 1. Professional Experience 🛠️</span>
             <span className="heading-secondary__main">
-              Here you will find more information about me, what I do, and list
-              of my current skills in programming
+              Showcasing my technical projects across various domains.
+            </span>
+          </h2>
+
+          <div className="main-section__content">
+            {/* 1.1 Production Projects */}
+            <h3 className="heading-quaternary" style={{ marginBottom: "2rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
+              1.1 Production Projects
+            </h3>
+            <p className="text-primary mb-12">Projects developed for real organizations or clients.</p>
+            <div className="projects__list">
+              <div className="text-primary italic">No production projects to display yet. Eager to contribute to real-world impact!</div>
+            </div>
+
+            {/* 1.2 Competition Projects */}
+            <h3 className="heading-quaternary" style={{ marginTop: "6rem", marginBottom: "2rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
+              1.2 Competition Projects
+            </h3>
+            <p className="text-primary mb-12">Projects submitted to hackathons and competitions.</p>
+            <div className="projects__list">
+              <div className="text-primary italic">Coming soon! Preparing for upcoming hackathons.</div>
+            </div>
+
+            {/* 1.3 Academic Projects */}
+            <h3 className="heading-quaternary" style={{ marginTop: "6rem", marginBottom: "2rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
+              1.3 Academic Projects
+            </h3>
+            <p className="text-primary mb-12">Coursework and bootcamp projects.</p>
+            <div className="projects__list">
+              <div className="projects__list-item">
+                <div className="projects__list-item-details">
+                  <div className="projects__list-item-img-cont">
+                    <img
+                      src="/potion-cafe.png"
+                      alt="Potion Cafe Project"
+                      className="projects__list-item-img"
+                    />
+                  </div>
+                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
+                    Potion Cafe (JSD7 Bootcamp)
+                  </h3>
+                  <div className="text-primary projects__list-item-text-primary">
+                    <p><strong>Role:</strong> Full-stack Developer (Frontend Focus)</p>
+                    <p><strong>Description:</strong> 
+                      <br/>- <strong>Target:</strong> Users seeking a seamless online cafe ordering experience.
+                      <br/>- <strong>Problem:</strong> Fragmented ordering processes in small cafe environments.
+                    </p>
+                    <p><strong>Lessons:</strong> Mastered team collaboration using Git and gained critical insights into NoSQL database architecture and state management.</p>
+                  </div>
+                  <div className="projects__buttons">
+                    <button className="btn btn-theme projects__btn-theme">
+                      <a href="https://group1-frontend.vercel.app" target="_blank" rel="noopener noreferrer">Live Link</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 1.4 Personal Projects */}
+            <h3 className="heading-quaternary" style={{ marginTop: "6rem", marginBottom: "2rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
+              1.4 Personal Projects
+            </h3>
+            <p className="text-primary mb-12">Independently initiated projects.</p>
+            <div className="projects__list">
+              <div className="projects__list-item">
+                <div className="projects__list-item-details">
+                  <div className="projects__list-item-img-cont">
+                    <img
+                      src="/task-manager.png"
+                      alt="Task Manager Project"
+                      className="projects__list-item-img"
+                    />
+                  </div>
+                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
+                    Task Manager
+                  </h3>
+                  <div className="text-primary projects__list-item-text-primary">
+                    <p><strong>Role:</strong> Sole Developer</p>
+                    <p><strong>Description:</strong> 
+                      <br/>- <strong>Target:</strong> Individuals looking for simple and effective productivity tools.
+                      <br/>- <strong>Problem:</strong> Managing daily tasks and deadlines without complex overhead.
+                    </p>
+                    <p><strong>Lessons:</strong> Enhanced skills in UI/UX design and local state management in React.</p>
+                  </div>
+                  <div className="projects__buttons">
+                    <button className="btn btn-theme projects__btn-theme">
+                      <a href="https://task-manager-web-app-mauve.vercel.app/" target="_blank" rel="noopener noreferrer">Live Link</a>
+                    </button>
+                    <button className="btn btn-inv projects__btn-inv">
+                      <a href="https://github.com/WindsurfHUB/task-manager-web-app" target="_blank" rel="noopener noreferrer">Code Link</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 1.5 Open Source / Contributions */}
+            <h3 className="heading-quaternary" style={{ marginTop: "6rem", marginBottom: "2rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
+              1.5 Open Source / Contributions
+            </h3>
+            <p className="text-primary mb-12">Bug fixes and library contributions on GitHub.</p>
+            <div className="projects__list">
+              <div className="text-primary italic">Active contributor in the making. Exploring open-source projects!</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Self-Development Section */}
+      <section id="self-development" className="about main-section">
+        <div className="main-container">
+          <h2 className="heading-secondary projects__heading-secondary">
+            <span className="heading-secondary__sm"> 2. Self-Development 📚</span>
+            <span className="heading-secondary__main">
+              Continuous learning through certifications and specialized courses.
+            </span>
+          </h2>
+          
+          <div className="main-section__content">
+            <h3 className="heading-quaternary mb-10">Technical Skills & Tools</h3>
+            <ul className="about__skills mb-20">
+              <li className="about__skill">HTML</li>
+              <li className="about__skill">CSS</li>
+              <li className="about__skill">JavaScript</li>
+              <li className="about__skill">React.js</li>
+              <li className="about__skill">Node.js</li>
+              <li className="about__skill">Git</li>
+              <li className="about__skill">VSCode</li>
+              <li className="about__skill">MongoDB</li>
+              <li className="about__skill">Express.js</li>
+              <li className="about__skill">GitHub</li>
+            </ul>
+
+            <h3 className="heading-quaternary mb-10">Certifications & Online Courses</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20">
+              {/* JSD7 */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/Thananarin-Saisornthananant.png" alt="JSD7" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Junior Software Developer</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span><strong>Institution:</strong> Generation Thailand JSD7 Bootcamp</span>
+                </p>
+              </div>
+
+              {/* GED */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/GED_certificate.jpg" alt="GED" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">GED Certificate</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span><strong>Institution:</strong> General Education Development (High School Equivalency)</span>
+                </p>
+              </div>
+
+              {/* JS Codecademy */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/windsurf2024_s-profile-_-Codecademy_JS.png" alt="JS" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">JavaScript Course</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span><strong>Institution:</strong> Codecademy</span>
+                </p>
+              </div>
+
+              {/* SQL Codecademy */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/windsurf2024_s-profile-_-Codecademy_SQL.png" alt="SQL" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">SQL & Database</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span><strong>Institution:</strong> Codecademy</span>
+                </p>
+              </div>
+
+              {/* CSS Codecademy */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/windsurf2024_s-profile-_-Codecademy_CSs.png" alt="CSS" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Advanced CSS</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span><strong>Institution:</strong> Codecademy</span>
+                </p>
+              </div>
+
+              {/* HTML Codecademy */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="./windsurf2024_s-profile-_-Codecademy_HTML.png" alt="HTML" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">HTML Fundamentals</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span><strong>Institution:</strong> Codecademy</span>
+                </p>
+              </div>
+
+              {/* Chula MOOC 1 */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/certificate_51610_1260087-1260087-17234003144403.jpg" alt="Chula MOOC" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Block-coding Basics</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span><strong>Institution:</strong> Chulalongkorn University (MOOC)</span>
+                </p>
+              </div>
+
+              {/* Chula MOOC 2 */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/certificate_56361_1260087-1260087-17233055177081.jpg" alt="Chula MOOC" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Computational Thinking</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span><strong>Institution:</strong> Chulalongkorn University (MOOC)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Awards & Achievements Section */}
+      <section id="awards" className="projects main-section bg-white">
+        <div className="main-container">
+          <h2 className="heading-secondary projects__heading-secondary">
+            <span className="heading-secondary__sm"> 3. Awards & Achievements 🏆</span>
+            <span className="heading-secondary__main">
+              Recognitions and honors received for academic and professional excellence.
+            </span>
+          </h2>
+          <div className="main-section__content">
+            <div className="text-primary italic">Record of achievements is being updated. Stay tuned!</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership & Volunteer Section */}
+      <section id="leadership" className="about main-section">
+        <div className="main-container">
+          <h2 className="heading-secondary projects__heading-secondary">
+            <span className="heading-secondary__sm"> 4. Leadership & Volunteer 🤝</span>
+            <span className="heading-secondary__main">
+              Roles and activities beyond coding that shaped my soft skills.
             </span>
           </h2>
           <div className="main-section__content">
             <div className="about__info">
               <div className="about__main-info">
-                <h3 className="heading-quaternary about__heading-quaternary">
-                  My Story
-                </h3>
-                <p className="text-primary about__text-primary">
-                  <span>
-                    Hi, I'm Windsurf, an 18-year-old passionate junior
-                    full-stack developer based in Chiang Mai. My journey into
-                    software development began during the pandemic while I was
-                    playing games and wanted to create one myself. I initially
-                    pursued studies at NFE after COVID-19 and later completed my
-                    General Educational Development (GED). Following this, I
-                    took the IELTS test and enrolled at Singapore Institute of
-                    Management in September 2023 to study a Bachelor of Computer
-                    Science (Game and Mobile Development) from the University of
-                    Wollongong. Unfortunately, I had to drop out in January 2024
-                    due to financial difficulties.
-                  </span>
-                  <span>
-                    In April 2024, I joined the Junior Software Development
-                    Bootcamp Thailand (JSD7), where I discovered my love for
-                    coding and immersed myself in learning the MERN stack from
-                    scratch. This intensive program allowed me to hone my skills
-                    in MongoDB, Express.js, React, and Node.js.
-                  </span>
-                  <span>
-                    During the bootcamp, I tackled various projects that
-                    strengthened my understanding of both front-end and back-end
-                    development. One of my proudest achievements was developing
-                    a dynamic e-commerce platform using React and integrating it
-                    with a MongoDB database. This project taught me valuable
-                    lessons in scalability, user experience design, and
-                    effective data management.
-                  </span>
-                  <span>
-                    I am passionate about leveraging technology to solve
-                    real-world problems and improve user experiences. I thrive
-                    in collaborative environments where creativity and
-                    innovation are encouraged, and I enjoy exploring new
-                    technologies to expand my skill set.
-                  </span>
-                  <span>
-                    Looking ahead, I aspire to deepen my expertise in full-stack
-                    development and contribute to impactful projects that make a
-                    difference. I am eager to explore opportunities where I can
-                    apply my skills in a dynamic team environment, pushing
-                    boundaries and delivering exceptional solutions.
-                  </span>
-                </p>
-              </div>
-              <div className="about__skill-info">
-                <h3 className="heading-quaternary about__heading-quaternary">
-                  My Skills
-                </h3>
-                <ul className="about__skills">
-                  <li className="about__skill">HTML</li>
-                  <li className="about__skill">CSS</li>
-                  <li className="about__skill">JavaScript</li>
-                  <li className="about__skill">React.js</li>
-                  <li className="about__skill">Node.js</li>
-                  <li className="about__skill">Git</li>
-                  <li className="about__skill">VSCode</li>
-                  <li className="about__skill">MongoDB</li>
-                  <li className="about__skill">Express.js</li>
-                  <li className="about__skill">GitHub</li>
-                </ul>
-                <h3 className="heading-quaternary py-6">
-                  More About Me
-                </h3>
-                <div className="center">
-                  <p className="text-primary about__text-primary">
-                    Click in to "My Chronicles" to know more about me and what my life is like. (It's just my life highlight of event that happen in my life.)(WIP)
-                  </p>
+                <h3 className="heading-quaternary mb-6">Roles & Activities</h3>
+                <div className="text-primary mb-10">
+                  <p>Participating in collaborative environments and contributing to the community.</p>
                 </div>
-                <div className="center flex justify-center pr-36">
+                
+                <h3 className="heading-quaternary mb-6">Soft Skills</h3>
+                <ul className="about__skills">
+                  <li className="about__skill">Teamwork</li>
+                  <li className="about__skill">Communication</li>
+                  <li className="about__skill">Problem Solving</li>
+                  <li className="about__skill">Adaptability</li>
+                  <li className="about__skill">Time Management</li>
+                </ul>
+              </div>
+              <div className="about__skill-info flex flex-col justify-center">
+                <p className="text-primary mb-10">
+                  Want to see my complete personal journey and growth?
+                </p>
+                <div className="center">
                   <Link to="/Chronicles">
                     <button className="learn-more">
                       <span className="circle" aria-hidden="true">
@@ -308,255 +511,22 @@ function Main() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="projects main-section">
-        <div className="main-container">
-          <h2 className="heading-secondary projects__heading-secondary">
-            <span className="heading-secondary__sm"> Experience & Projects 🛠️</span>
-            <span className="heading-secondary__main">
-              Professional, Academic, and Personal projects following industry standards.
-            </span>
-          </h2>
-
-          <div className="main-section__content">
-            {/* --- Category: Academic / Bootcamp Projects --- */}
-            <h3 className="heading-quaternary" style={{ marginBottom: "4rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
-              1. Academic & Bootcamp Projects
-            </h3>
-            
-            <div className="projects__list">
-              {/* Project: Potion Cafe */}
-              <div className="projects__list-item">
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/potion-cafe.png"
-                      alt="Potion Cafe Project"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Potion Cafe (JSD7 Bootcamp)
-                  </h3>
-                  <div className="text-primary projects__list-item-text-primary">
-                    <p><strong>Role:</strong> Full-stack Developer (Frontend Focus)</p>
-                    <p><strong>Problem:</strong> Practicing MERN stack integration and state management in a collaborative team environment.</p>
-                    <p><strong>Lessons:</strong> Mastered team collaboration using Git and gained critical insights into NoSQL database architecture, specifically evaluating when to use MongoDB vs. relational databases.</p>
-                  </div>
-                  <div className="projects__buttons">
-                    <button className="btn btn-theme projects__btn-theme">
-                      <a
-                        href="https://group1-frontend.vercel.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Link
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* --- Category: Personal Projects --- */}
-            <h3 className="heading-quaternary" style={{ marginTop: "8rem", marginBottom: "4rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
-              2. Personal Projects
-            </h3>
-
-            <div className="projects__list">
-              {/* Project: Task Manager */}
-              <div className="projects__list-item">
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/task-manager.png"
-                      alt="Task Manager Project"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Task Manager
-                  </h3>
-                  <div className="text-primary projects__list-item-text-primary">
-                    <p><strong>Role:</strong> Sole Developer</p>
-                    <p><strong>Target:</strong> Individuals looking for productivity tools</p>
-                    <p><strong>Problem:</strong> Managing daily tasks and deadlines effectively</p>
-                    <p><strong>Lessons:</strong> UI/UX design and local state management</p>
-                  </div>
-                  <div className="projects__buttons">
-                    <button className="btn btn-theme projects__btn-theme">
-                      <a
-                        href="https://task-manager-web-app-mauve.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Link
-                      </a>
-                    </button>
-                    <button className="btn btn-inv projects__btn-inv">
-                      <a
-                        href="https://github.com/WindsurfHUB/task-manager-web-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Code Link
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Certificates Section */}
-      <section id="certificates" className="projects main-section">
-        <div className="main-container">
-          <h2 className="heading-secondary projects__heading-secondary">
-            <span className="heading-secondary__sm"> Archive &amp; Certificates 🏆</span>
-            <span className="heading-secondary__main">
-              A collection of my academic and professional certifications.
-            </span>
-          </h2>
-          
-          <div className="main-section__content">
-            {/* 2-Column Grid Container */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20">
-              
-              {/* GED */}
-              <div className="projects__list-item-details" style={{ margin: 0 }}>
-                <div className="projects__list-item-img-cont">
-                  <img src="/GED_certificate.jpg" alt="GED" className="projects__list-item-img" />
-                </div>
-                <h3 className="heading-tertiary projects__list-item-heading-tertiary">GED Certificate</h3>
-                <p className="text-primary projects__list-item-text-primary">
-                  <span>General Education Development completion (High School Equivalency).</span>
-                </p>
-              </div>
-
-              {/* JSD7 */}
-              <div className="projects__list-item-details" style={{ margin: 0 }}>
-                <div className="projects__list-item-img-cont">
-                  <img src="/Thananarin-Saisornthananant.png" alt="JSD7" className="projects__list-item-img" />
-                </div>
-                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Junior Software Developer</h3>
-                <p className="text-primary projects__list-item-text-primary">
-                  <span>Generation Thailand JSD7 Bootcamp completion certificate.</span>
-                </p>
-              </div>
-
-              {/* JS Codecademy */}
-              <div className="projects__list-item-details" style={{ margin: 0 }}>
-                <div className="projects__list-item-img-cont">
-                  <img src="/windsurf2024_s-profile-_-Codecademy_JS.png" alt="JS" className="projects__list-item-img" />
-                </div>
-                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Codecademy JavaScript</h3>
-                <p className="text-primary projects__list-item-text-primary">
-                  <span>In-depth JavaScript course completion at Codecademy.</span>
-                </p>
-              </div>
-
-              {/* SQL Codecademy */}
-              <div className="projects__list-item-details" style={{ margin: 0 }}>
-                <div className="projects__list-item-img-cont">
-                  <img src="/windsurf2024_s-profile-_-Codecademy_SQL.png" alt="SQL" className="projects__list-item-img" />
-                </div>
-                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Codecademy SQL</h3>
-                <p className="text-primary projects__list-item-text-primary">
-                  <span>Database management and SQL query course at Codecademy.</span>
-                </p>
-              </div>
-
-              {/* CSS Codecademy */}
-              <div className="projects__list-item-details" style={{ margin: 0 }}>
-                <div className="projects__list-item-img-cont">
-                  <img src="/windsurf2024_s-profile-_-Codecademy_CSs.png" alt="CSS" className="projects__list-item-img" />
-                </div>
-                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Codecademy CSS</h3>
-                <p className="text-primary projects__list-item-text-primary">
-                  <span>Advanced CSS and responsive design course at Codecademy.</span>
-                </p>
-              </div>
-
-              {/* Chula MOOC 1 */}
-              <div className="projects__list-item-details" style={{ margin: 0 }}>
-                <div className="projects__list-item-img-cont">
-                  <img src="/certificate_51610_1260087-1260087-17234003144403.jpg" alt="Chula MOOC" className="projects__list-item-img" />
-                </div>
-                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Chula MOOC: Block-coding</h3>
-                <p className="text-primary projects__list-item-text-primary">
-                  <span>Learning Coding Basics with Block-coding at Chulalongkorn University.</span>
-                </p>
-              </div>
-
-              {/* Chula MOOC 2 */}
-              <div className="projects__list-item-details" style={{ margin: 0 }}>
-                <div className="projects__list-item-img-cont">
-                  <img src="/certificate_56361_1260087-1260087-17233055177081.jpg" alt="Chula MOOC" className="projects__list-item-img" />
-                </div>
-                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Chula MOOC: Computational Thinking</h3>
-                <p className="text-primary projects__list-item-text-primary">
-                  <span>Computational Thinking and fundamental coding at Chulalongkorn University.</span>
-                </p>
-              </div>
-
-              {/* HTML Codecademy */}
-              <div className="projects__list-item-details" style={{ margin: 0 }}>
-                <div className="projects__list-item-img-cont">
-                  <img src="./windsurf2024_s-profile-_-Codecademy_HTML.png" alt="HTML" className="projects__list-item-img" />
-                </div>
-                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Codecademy HTML</h3>
-                <p className="text-primary projects__list-item-text-primary">
-                  <span>Web structure and HTML course completion at Codecademy.</span>
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer Section */}
       <footer className="main-footer">
         <div className="main-footer__upper">
           <div className="main-container">
             <ul className="main-footer__links">
-              <li className="main-footer__link">
-                <a href="#home-hero">Home</a>
-              </li>
-              <li className="main-footer__link">
-                <a href="#about">About</a>
-              </li>
-              <li className="main-footer__link">
-                <a href="#projects">Projects</a>
-              </li>
+              <li className="main-footer__link"><a href="#home-hero">Home</a></li>
+              <li className="main-footer__link"><a href="#experience">Experience</a></li>
+              <li className="main-footer__link"><a href="#self-development">Self-Development</a></li>
             </ul>
             <div className="main-footer__mid-line"></div>
             <div className="main-footer__socials">
-              <a
-                href="https://github.com/WindsurfHUB/"
-                className="main-footer__social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
-                  alt="GitHub"
-                  className="main-footer__social-link-icon"
-                />
+              <a href="https://github.com/WindsurfHUB/" className="main-footer__social-link" target="_blank" rel="noopener noreferrer">
+                <img src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png" alt="GitHub" className="main-footer__social-link-icon" />
               </a>
-              <a
-                href="https://www.linkedin.com/in/thananarin-s-588446306/"
-                className="main-footer__social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-                  alt="LinkedIn"
-                  className="main-footer__social-link-icon"
-                />
+              <a href="https://www.linkedin.com/in/thananarin-s-588446306/" className="main-footer__social-link" target="_blank" rel="noopener noreferrer">
+                <img src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png" alt="LinkedIn" className="main-footer__social-link-icon" />
               </a>
             </div>
           </div>
@@ -564,26 +534,13 @@ function Main() {
         <div className="main-footer__bottom">
           <div className="main-container">
             <p className="main-footer__bottom-txt">
-              <a
-                target="_blank"
-                href="https://github.com/rammcodes/wowfolio"
-                rel="noopener noreferrer"
-              >
-                WowFolio
-              </a>{" "}
-              Open-Source Template. Made by{" "}
-              <a
-                target="_blank"
-                href="https://rammaheshwari.com"
-                rel="noopener noreferrer"
-              >
-                Ram Maheshwari
-              </a>
+              Template by <a target="_blank" href="https://rammaheshwari.com" rel="noopener noreferrer">Ram Maheshwari</a>
             </p>
           </div>
         </div>
       </footer>
     </div>
+
   );
 }
 
