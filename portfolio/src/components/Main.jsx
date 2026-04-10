@@ -312,21 +312,60 @@ function Main() {
       <section id="projects" className="projects main-section">
         <div className="main-container">
           <h2 className="heading-secondary projects__heading-secondary">
-            <span className="heading-secondary__sm"> Projects 🛠️</span>
+            <span className="heading-secondary__sm"> Experience & Projects 🛠️</span>
             <span className="heading-secondary__main">
-              Here you will find some of the personal and group projects that I
-              created
+              Professional, Academic, and Personal projects following industry standards.
             </span>
           </h2>
+
           <div className="main-section__content">
+            {/* --- Category: Academic / Bootcamp Projects --- */}
+            <h3 className="heading-quaternary" style={{ marginBottom: "4rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
+              1. Academic & Bootcamp Projects
+            </h3>
+            
             <div className="projects__list">
-              {/* Project 1 */}
+              {/* Project: Potion Cafe */}
               <div className="projects__list-item">
-                <div className="projects__list-item-count">
-                  <span className="projects__list-item-count-num">1</span>
-                  <span className="projects__list-item-count-line"></span>
-                  <span className="projects__list-item-count-end-dot"></span>
+                <div className="projects__list-item-details">
+                  <div className="projects__list-item-img-cont">
+                    <img
+                      src="/potion-cafe.png"
+                      alt="Potion Cafe Project"
+                      className="projects__list-item-img"
+                    />
+                  </div>
+                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
+                    Potion Cafe (JSD7 Bootcamp)
+                  </h3>
+                  <div className="text-primary projects__list-item-text-primary">
+                    <p><strong>Role:</strong> Full-stack Developer (Frontend Focus)</p>
+                    <p><strong>Problem:</strong> Practicing MERN stack integration and state management in a collaborative team environment.</p>
+                    <p><strong>Lessons:</strong> Mastered team collaboration using Git and gained critical insights into NoSQL database architecture, specifically evaluating when to use MongoDB vs. relational databases.</p>
+                  </div>
+                  <div className="projects__buttons">
+                    <button className="btn btn-theme projects__btn-theme">
+                      <a
+                        href="https://group1-frontend.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Link
+                      </a>
+                    </button>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+            {/* --- Category: Personal Projects --- */}
+            <h3 className="heading-quaternary" style={{ marginTop: "8rem", marginBottom: "4rem", color: "rgba(var(--themeColor), 1)", fontWeight: "bold" }}>
+              2. Personal Projects
+            </h3>
+
+            <div className="projects__list">
+              {/* Project: Task Manager */}
+              <div className="projects__list-item">
                 <div className="projects__list-item-details">
                   <div className="projects__list-item-img-cont">
                     <img
@@ -338,9 +377,12 @@ function Main() {
                   <h3 className="heading-tertiary projects__list-item-heading-tertiary">
                     Task Manager
                   </h3>
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>Note your task and see when it's due</span>
-                  </p>
+                  <div className="text-primary projects__list-item-text-primary">
+                    <p><strong>Role:</strong> Sole Developer</p>
+                    <p><strong>Target:</strong> Individuals looking for productivity tools</p>
+                    <p><strong>Problem:</strong> Managing daily tasks and deadlines effectively</p>
+                    <p><strong>Lessons:</strong> UI/UX design and local state management</p>
+                  </div>
                   <div className="projects__buttons">
                     <button className="btn btn-theme projects__btn-theme">
                       <a
@@ -363,43 +405,6 @@ function Main() {
                   </div>
                 </div>
               </div>
-
-              {/* Project 2 */}
-              <div className="projects__list-item projects__list-item--inv">
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/potion-cafe.png"
-                      alt="Potion Cafe Project"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Potion Cafe
-                  </h3>
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>E-commerce coffee shop</span>
-                  </p>
-                  <div className="projects__buttons">
-                    <button className="btn btn-theme projects__btn-theme">
-                      <a
-                        href="https://group1-frontend.vercel.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Live Link
-                      </a>
-                    </button>
-                  </div>
-                </div>
-                <div className="projects__list-item-count">
-                  <span className="projects__list-item-count-num">2</span>
-                  <span className="projects__list-item-count-line"></span>
-                  <span className="projects__list-item-count-end-dot"></span>
-                </div>
-              </div>
-
-              {/* Add more projects as needed following the same structure */}
             </div>
           </div>
         </div>
@@ -409,178 +414,104 @@ function Main() {
       <section id="certificates" className="projects main-section">
         <div className="main-container">
           <h2 className="heading-secondary projects__heading-secondary">
-            <span className="heading-secondary__sm">
-              {" "}
-              Archive &amp; certificates 🏆
-            </span>
+            <span className="heading-secondary__sm"> Archive &amp; Certificates 🏆</span>
             <span className="heading-secondary__main">
-              Here you will find some of my certificate !
+              A collection of my academic and professional certifications.
             </span>
           </h2>
+          
           <div className="main-section__content">
-            <div className="projects__list">
-              <div className="projects__list-item">
-                <div className="projects__list-item-count">
-                  <span className="projects__list-item-count-num"> 1 </span>
-                  <span className="projects__list-item-count-line"> </span>
-                  <span className="projects__list-item-count-end-dot"> </span>
+            {/* 2-Column Grid Container */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20">
+              
+              {/* GED */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/GED_certificate.jpg" alt="GED" className="projects__list-item-img" />
                 </div>
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/GED_certificate.jpg"
-                      alt="Project Image"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    GED certificate
-                  </h3>
-                  {/* <hr class="projects__title-text-divider" /> */}
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>
-                      Completion certificate of General Education
-                      Development(GED)
-                    </span>
-                  </p>
-                </div>
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/Thananarin-Saisornthananant.png"
-                      alt="Project Image"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Junior Software Developer Certificate
-                  </h3>
-                  {/* <hr class="projects__title-text-divider" /> */}
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>
-                      Completion certificate of junior software developer at
-                      Generation Thailand
-                    </span>
-                  </p>
-                </div>
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/windsurf2024_s-profile-_-Codecademy_JS.png"
-                      alt="Project Image"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Codecademy JavaScript Course certificate
-                  </h3>
-                  {/* <hr class="projects__title-text-divider" /> */}
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>
-                      Completion certificate of JavaScript course at Codecademy
-                    </span>
-                  </p>
-                </div>
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/windsurf2024_s-profile-_-Codecademy_SQL.png"
-                      alt="Project Image"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Codecademy SQL Course certificate
-                  </h3>
-                  {/* <hr class="projects__title-text-divider" /> */}
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>
-                      Completion certificate of SQL Course at Codecademy
-                    </span>
-                  </p>
-                </div>
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/windsurf2024_s-profile-_-Codecademy_CSs.png"
-                      alt="Project Image"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Codecademy CSS Course certificate
-                  </h3>
-                  {/* <hr class="projects__title-text-divider" /> */}
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>
-                      Completion certificate of CSS Course at Codecademy
-                    </span>
-                  </p>
-                </div>
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/certificate_51610_1260087-1260087-17234003144403.jpg"
-                      alt="Project Image"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Chula Mooc certificate
-                  </h3>
-                  {/* <hr class="projects__title-text-divider" /> */}
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>
-                      Completion certificate of Learn Coding Basic with
-                      Block-coding at CHULA MOOC
-                    </span>
-                  </p>
-                </div>
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="/certificate_56361_1260087-1260087-17233055177081.jpg"
-                      alt="Project Image"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Chula Mooc certificate
-                  </h3>
-                  {/* <hr class="projects__title-text-divider" /> */}
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>
-                      Completion certificate of Computational Thinking and My
-                      first code at CHULA MOOC
-                    </span>
-                  </p>
-                </div>
-                <div className="projects__list-item-details">
-                  <div className="projects__list-item-img-cont">
-                    <img
-                      src="./windsurf2024_s-profile-_-Codecademy_HTML.png"
-                      alt="Project Image"
-                      className="projects__list-item-img"
-                    />
-                  </div>
-                  <h3 className="heading-tertiary projects__list-item-heading-tertiary">
-                    Codecademy HTML Course certificate
-                  </h3>
-                  {/* <hr class="projects__title-text-divider" /> */}
-                  <p className="text-primary projects__list-item-text-primary">
-                    <span>
-                      Completion certificate of HTML Course at Codecademy
-                    </span>
-                  </p>
-                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">GED Certificate</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span>General Education Development completion (High School Equivalency).</span>
+                </p>
               </div>
-              <div className="projects__list-item projects__list-item--inv">
-                <div className="projects__list-item-count">
-                  <span className="projects__list-item-count-num"> 2 </span>
-                  <span className="projects__list-item-count-line"> </span>
-                  <span className="projects__list-item-count-end-dot"> </span>
+
+              {/* JSD7 */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/Thananarin-Saisornthananant.png" alt="JSD7" className="projects__list-item-img" />
                 </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Junior Software Developer</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span>Generation Thailand JSD7 Bootcamp completion certificate.</span>
+                </p>
               </div>
+
+              {/* JS Codecademy */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/windsurf2024_s-profile-_-Codecademy_JS.png" alt="JS" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Codecademy JavaScript</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span>In-depth JavaScript course completion at Codecademy.</span>
+                </p>
+              </div>
+
+              {/* SQL Codecademy */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/windsurf2024_s-profile-_-Codecademy_SQL.png" alt="SQL" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Codecademy SQL</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span>Database management and SQL query course at Codecademy.</span>
+                </p>
+              </div>
+
+              {/* CSS Codecademy */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/windsurf2024_s-profile-_-Codecademy_CSs.png" alt="CSS" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Codecademy CSS</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span>Advanced CSS and responsive design course at Codecademy.</span>
+                </p>
+              </div>
+
+              {/* Chula MOOC 1 */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/certificate_51610_1260087-1260087-17234003144403.jpg" alt="Chula MOOC" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Chula MOOC: Block-coding</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span>Learning Coding Basics with Block-coding at Chulalongkorn University.</span>
+                </p>
+              </div>
+
+              {/* Chula MOOC 2 */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="/certificate_56361_1260087-1260087-17233055177081.jpg" alt="Chula MOOC" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Chula MOOC: Computational Thinking</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span>Computational Thinking and fundamental coding at Chulalongkorn University.</span>
+                </p>
+              </div>
+
+              {/* HTML Codecademy */}
+              <div className="projects__list-item-details" style={{ margin: 0 }}>
+                <div className="projects__list-item-img-cont">
+                  <img src="./windsurf2024_s-profile-_-Codecademy_HTML.png" alt="HTML" className="projects__list-item-img" />
+                </div>
+                <h3 className="heading-tertiary projects__list-item-heading-tertiary">Codecademy HTML</h3>
+                <p className="text-primary projects__list-item-text-primary">
+                  <span>Web structure and HTML course completion at Codecademy.</span>
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
